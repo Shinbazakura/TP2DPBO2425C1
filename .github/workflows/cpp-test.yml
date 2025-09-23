@@ -31,4 +31,4 @@ jobs:
       - name: Run test
         run: |
           "./Folder CPP/app" < "Folder CPP/tests/input.txt" > "Folder CPP/output_github.txt"
-          diff -u "Folder CPP/tests/expected.txt" "Folder CPP/output_github.txt"
+          diff -u "Folder CPP/tests/expected_for_githubaction.txt" "Folder CPP/output_github.txt"
