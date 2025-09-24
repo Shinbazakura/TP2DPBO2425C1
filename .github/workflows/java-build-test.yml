@@ -30,11 +30,12 @@ jobs:
       - name: Run test
         run: |
           java -cp build Main < "Folder Java/tests/input.txt" > build/output_github.txt
-          diff -u "Folder Java/tests/expected_for_githubaction.txt" build/output_github.txt || true
+          diff -u "Folder Java/tests/expected_for_githubaction.txt" build/output_github.txt
 
-      # 5️⃣ Upload output as artifact
-      - name: Upload output file
-        uses: actions/upload-artifact@v3
+      # 5️⃣ Upload output.txt so we can download it
+      - name: Upload test 
+        if: always()                     
+        uses: actions/upload-artifact@v4
         with:
-          name: output-file
-          path: build/output_github.txt
+            name: java-test-output
+            path: build/output_github.txt   # <-- note the folder prefix
