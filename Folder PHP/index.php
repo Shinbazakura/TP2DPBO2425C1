@@ -75,6 +75,7 @@ function printDisplayTable(array $listDisplay) {
     </style>
 </head>
 <body>
+<a href="reset.php">Reset Session</a>
 
 <h1>Display Inventory</h1>
 
@@ -96,6 +97,5 @@ function printDisplayTable(array $listDisplay) {
     <input type="text" name="aspekRatio" placeholder="Aspek Ratio" required>
     <input type="submit" value="Add Display">
 </form>
-
 </body>
 </html>
