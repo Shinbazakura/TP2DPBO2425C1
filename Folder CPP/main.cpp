@@ -122,7 +122,7 @@ int main()
         }
         else if (input == "ADD")
         {
-            std::cout << "Add";
+            // std::cout << "Add";
             Display tempD;
             std::string tempS{};
             int tempI{};
@@ -146,7 +146,7 @@ int main()
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // clear newline
             tempD.setStok(tempI);
 
-            std::cout << "Masukan No Part: ";
+            std::cout << "Masukan No Part : ";
             std::getline(std::cin, tempS);
             tempD.setNoPart(tempS);
 
@@ -303,10 +303,8 @@ void help()
 {
     std::cout << "SHOW" << std::endl;
     std::cout << "  Untuk menampilkan semua data" << std::endl;
-    std::cout << std::endl;
     std::cout << "ADD" << std::endl;
     std::cout << "  Untuk menambahkan data" << std::endl;
-    std::cout << std::endl;
     std::cout << "HELP" << std::endl;
     std::cout << "  Untuk menampilkan semua command" << std::endl;
     std::cout << "EXIT" << std::endl;

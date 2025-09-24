@@ -16,20 +16,18 @@
 >HELP
 SHOW
   Untuk menampilkan semua data
-
 ADD
   Untuk menambahkan data
-
 HELP
   Untuk menampilkan semua command
 EXIT
   Untuk keluar dari aplikasi
 >ADD
-AddMasukan ID : 8
+Masukan ID : 8
 Masukan Nama : Sharp LQ156D1JW04 15.6 inch 4K IGZO
 Masukan Harga : 3600000
 Masukan Stok : 3
-Masukan No Part: LQ156D1JW04
+Masukan No Part : LQ156D1JW04
 Masukan Manufaktur : Sharp
 Masukan Kondisi : Baru
 Masukan Resolusi : 3840x2160
@@ -51,11 +49,11 @@ Data berhasil dimasukan.
 | 8  | Sharp LQ156D1JW04 15.6 inch 4K IGZO   | 3600000 | 3    | LQ156D1JW04    | Sharp        | Baru    | 3840x2160 | 15     | IGZO IPS   | 16:9  |
 +----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+
 >ADD
-AddMasukan ID : 9
+Masukan ID : 9
 Masukan Nama : BOE NE140QDM-N61 14 inch 2.8K IPS
 Masukan Harga : 2900000
 Masukan Stok : 4
-Masukan No Part: NE140QDM-N61
+Masukan No Part : NE140QDM-N61
 Masukan Manufaktur : BOE
 Masukan Kondisi : Baru
 Masukan Resolusi : 2880x1800

@@ -22,7 +22,7 @@ HELP
   Untuk menampilkan semua command
 EXIT
   Untuk keluar dari aplikasi
->AddMasukan ID : Masukan Nama : Masukan Harga : Masukan Stok : Masukan No Part: Masukan Manufaktur : Masukan Kondisi : Masukan Resolusi : Masukan Ukuran(Inch) : Masukan Tipe Panel : Masukan Aspek Ratio : Data berhasil dimasukan.
+>Masukan ID : Masukan Nama : Masukan Harga : Masukan Stok : Masukan No Part: Masukan Manufaktur : Masukan Kondisi : Masukan Resolusi : Masukan Ukuran(Inch) : Masukan Tipe Panel : Masukan Aspek Ratio : Data berhasil dimasukan.
 >+----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+
 | ID | Nama                                  | Harga   | Stok | NoPart         | Manufaktur   | Kondisi | Resolusi  | Ukuran | TipePanel  | Aspek |
 +----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+
@@ -35,7 +35,7 @@ EXIT
 | 7  | BOE NE160QDM-NY1 16 inch 2.5K 165 Hz  | 3800000 | 2    | NE160QDM-NY1   | BOE          | Baru    | 2560x1600 | 16     | IPS 165 Hz | 16:10 |
 | 8  | Sharp LQ156D1JW04 15.6 inch 4K IGZO   | 3600000 | 3    | LQ156D1JW04    | Sharp        | Baru    | 3840x2160 | 15     | IGZO IPS   | 16:9  |
 +----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+
->AddMasukan ID : Masukan Nama : Masukan Harga : Masukan Stok : Masukan No Part: Masukan Manufaktur : Masukan Kondisi : Masukan Resolusi : Masukan Ukuran(Inch) : Masukan Tipe Panel : Masukan Aspek Ratio : Data berhasil dimasukan.
+>Masukan ID : Masukan Nama : Masukan Harga : Masukan Stok : Masukan No Part: Masukan Manufaktur : Masukan Kondisi : Masukan Resolusi : Masukan Ukuran(Inch) : Masukan Tipe Panel : Masukan Aspek Ratio : Data berhasil dimasukan.
 >+----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+
 | ID | Nama                                  | Harga   | Stok | NoPart         | Manufaktur   | Kondisi | Resolusi  | Ukuran | TipePanel  | Aspek |
 +----+---------------------------------------+---------+------+----------------+--------------+---------+-----------+--------+------------+-------+

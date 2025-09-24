@@ -85,7 +85,7 @@ public class Main {
         d.setAspekRatio(sc.nextLine());
 
         listDisplay.add(d);
-        System.out.println("Data berhasil dimasukkan.");
+        System.out.println("Data berhasil dimasukan.");
     }
 
     private static void printDisplayTable(List<Display> list) {
@@ -151,9 +151,13 @@ public class Main {
     }
 
     private static void help() {
-        System.out.println("SHOW  : Menampilkan semua data");
-        System.out.println("ADD   : Menambahkan data");
-        System.out.println("HELP  : Menampilkan daftar command");
-        System.out.println("EXIT  : Keluar dari aplikasi");
+        System.out.println("SHOW");
+        System.out.println("  Untuk menampilkan semua data");
+        System.out.println("ADD");
+        System.out.println("  Untuk menambahkan data");
+        System.out.println("HELP");
+        System.out.println("  Untuk menampilkan semua command");
+        System.out.println("EXIT");
+        System.out.println("  Untuk keluar dari aplikasi");
     }
 }

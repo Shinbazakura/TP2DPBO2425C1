@@ -10,10 +10,14 @@ def welcome():
     print("=====================")
 
 def help_menu():
-    print("SHOW  : Tampilkan semua data")
-    print("ADD   : Tambahkan data")
-    print("HELP  : Lihat semua command")
-    print("EXIT  : Keluar aplikasi")
+    print("SHOW")
+    print("  Untuk menampilkan semua data")
+    print("ADD")
+    print("  Untuk menambahkan data")
+    print("HELP")
+    print("  Untuk menampilkan semua command")
+    print("EXIT")
+    print("  Untuk keluar dari aplikasi")
 
 def print_display(d: Display):
     print(f"ID : {d.id}")
@@ -76,7 +80,7 @@ def main():
     welcome()
 
     while True:
-        cmd = input("> ").strip().upper()
+        cmd = input(">").strip().upper()
         if cmd == "SHOW":
             print_display_table(list_display)
         elif cmd == "ADD":
