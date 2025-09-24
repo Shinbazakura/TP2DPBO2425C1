@@ -1,0 +1,33 @@
+name: Java Build & Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2️⃣ Set up Java (Temurin distribution, JDK 17)
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # 3️⃣ Compile all Java sources in "Folder Java/"
+      - name: Build
+        run: |
+          mkdir -p build
+          javac -d build "Folder Java"/*.java
+
+      # 4️⃣ Run automated test
+      - name: Run test
+        run: |
+          java -cp build Main < "Folder Java/tests/input.txt" > build/output_github.txt
+          diff -u "Folder Java/tests/expected_for_githubaction.txt" build/output_github.txt
