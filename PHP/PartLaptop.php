@@ -7,10 +7,10 @@ class PartLaptop extends Barang {
     private string $kondisi;
 
     public function __construct(
-        int $id = 0, string $nama = "", int $harga = 0, int $stok = 0,
+        int $id = 0, string $nama = "", int $harga = 0, int $stok = 0, string $gambar = "",
         string $noPart = "", string $manufaktur = "", string $kondisi = ""
     ) {
-        parent::__construct($id, $nama, $harga, $stok);
+        parent::__construct($id, $nama, $harga, $stok, $gambar);
         $this->noPart = $noPart;
         $this->manufaktur = $manufaktur;
         $this->kondisi = $kondisi;

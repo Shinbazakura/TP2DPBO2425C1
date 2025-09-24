@@ -17,18 +17,18 @@ jobs:
       - name: Install g++
         run: sudo apt-get update && sudo apt-get install -y g++
 
-      # 3️⃣ Compile all sources in "Folder CPP"
+      # 3️⃣ Compile all sources in "CPP"
       - name: Build
         run: |
           g++ -std=c++17 \
-            "Folder CPP/main.cpp" \
-            "Folder CPP/Barang.cpp" \
-            "Folder CPP/PartLaptop.cpp" \
-            "Folder CPP/Display.cpp" \
-            -o "Folder CPP/app"
+            "CPP/main.cpp" \
+            "CPP/Barang.cpp" \
+            "CPP/PartLaptop.cpp" \
+            "CPP/Display.cpp" \
+            -o "CPP/app"
 
       # 4️⃣ Run automated test
       - name: Run test
         run: |
-          "./Folder CPP/app" < "Folder CPP/tests/input.txt" > "Folder CPP/output_github.txt"
-          diff -u "Folder CPP/tests/expected_for_githubaction.txt" "Folder CPP/output_github.txt"
+          "./CPP/app" < "CPP/tests/input.txt" > "CPP/output_github.txt"
+          diff -u "CPP/tests/expected_for_githubaction.txt" "CPP/output_github.txt"

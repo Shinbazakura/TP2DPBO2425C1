@@ -8,11 +8,11 @@ class Display extends PartLaptop {
     private string $aspekRatio;
 
     public function __construct(
-        int $id = 0, string $nama = "", int $harga = 0, int $stok = 0,
+        int $id = 0, string $nama = "", int $harga = 0, int $stok = 0, string $gambar = "",
         string $noPart = "", string $manufaktur = "", string $kondisi = "",
         string $resolusi = "", int $ukuran = 0, string $tipePanel = "", string $aspekRatio = ""
     ) {
-        parent::__construct($id, $nama, $harga, $stok, $noPart, $manufaktur, $kondisi);
+        parent::__construct($id, $nama, $harga, $stok, $gambar, $noPart, $manufaktur, $kondisi);
         $this->resolusi = $resolusi;
         $this->ukuran = $ukuran;
         $this->tipePanel = $tipePanel;

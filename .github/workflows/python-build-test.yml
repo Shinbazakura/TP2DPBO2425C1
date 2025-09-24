@@ -27,5 +27,5 @@ jobs:
       # 4️⃣ Run the Python application with test input and compare output
       - name: Run tests
         run: |
-          python3 "Folder Python/main.py" < "Folder Python/tests/input.txt" > "Folder Python/tests/output_github.txt"
-          diff -u "Folder Python/tests/expected_for_githubaction.txt" "Folder Python/tests/output_github.txt"
+          python3 "Python/main.py" < "Python/tests/input.txt" > "Python/tests/output_github.txt"
+          diff -u "Python/tests/expected_for_githubaction.txt" "Python/tests/output_github.txt"

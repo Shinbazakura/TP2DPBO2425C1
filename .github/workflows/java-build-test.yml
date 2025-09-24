@@ -20,17 +20,17 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      # 3️⃣ Compile all Java sources in "Folder Java/"
+      # 3️⃣ Compile all Java sources in "Java/"
       - name: Build
         run: |
           mkdir -p build
-          javac -d build "Folder Java"/*.java
+          javac -d build "Java"/*.java
 
       # 4️⃣ Run automated test
       - name: Run test
         run: |
-          java -cp build Main < "Folder Java/tests/input.txt" > build/output_github.txt
-          diff -u "Folder Java/tests/expected_for_githubaction.txt" build/output_github.txt
+          java -cp build Main < "Java/tests/input.txt" > build/output_github.txt
+          diff -u "Java/tests/expected_for_githubaction.txt" build/output_github.txt
 
       # 5️⃣ Upload output.txt so we can download it
       - name: Upload test 
